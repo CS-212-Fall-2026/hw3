@@ -1,0 +1,77 @@
+\documentclass[addpoints]{exam}
+
+\usepackage{amsmath,amssymb, amsthm}
+\usepackage[a4paper]{geometry}
+\usepackage{hyperref}
+\usepackage{forest}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{titling}
+\usepackage{wasysym}
+\usepackage{mdframed}
+\usepackage{arabtex}
+\usepackage{utf8}
+\setcode{utf8}
+
+
+% Header and footer.
+\pagestyle{headandfoot}
+\runningheadrule
+\runningfootrule
+\runningheader{CS 212, Fall 2026}{HW 03: Turing Machine, Decidability, and Recognizability}{Fall 2026}
+\runningfooter{}{Page \thepage\ of \numpages}{}
+\firstpageheader{}{}{}
+
+\newcommand{\blank}{\textvisiblespace}
+
+\boxedpoints
+% \printanswers %uncomment this
+
+\title{Homework 03: Turing Machine, Decidability, and Recognizability\\ \vspace{0.5cm} \Large CS 212 Nature of Computation\\Habib University}
+% \author{} %Enter your team name here
+\date{Fall 2026}
+
+\begin{document}
+\maketitle
+
+\begin{questions}
+
+    \question[10] Let $\textsc{FINITE}_{NFA} = \{\langle M \rangle \mid M \text{ is a NFA and } L(M) \text{ is an finite language}\}$. Show that $\textsc{FINITE}_{NFA}$ is decidable.
+
+    \begin{solution}
+        %enter your solution here
+    \end{solution}
+
+    
+    \question[10] Let $A$ be a language over the alphabets $\{0,1\}$. Prove or disprove that $A$ is Turing-recognizable if and only if a decidable language $B$ exists such that 
+    $$A = \{x \in \{0,1\}^*\mid \exists y\in \{0,1\}^* \forall z \in \{0,1\}^{|y|} (\langle x, y, z\rangle \in B)\}.$$
+
+    \begin{solution}
+        %enter your solution here
+    \end{solution}
+
+
+    \question[10] Let $\Gamma = \{0, 1, \blank\}$ be the tape alphabet for all Turing Machines in this problem. 
+    
+    After failing to show off your intellect to your peers you have reached a preschool, where you have decided to participate in the ongoing playground competition of saying the largest number you know. After going back and forth with some second graders, to show off your superior mathematical intellect, you say \href{https://en.wikipedia.org/wiki/Googolplex}{Googolplex}, to this an overly smart kid says the \href{https://en.wikipedia.org/wiki/Graham%27s_number}{Graham's number}. You being more competitive than any other seven year old there says \textsc{tree}(3). Little known to you a seven grader grown on Numberblock, Baby Shark and Skibidi Toilet defines a very peculiar function, called the Working Bidoof. 
+    Working Bidoof $WB : \mathbb{N} \to \mathbb{N}$ is defined as follows. For any $k \in \mathbb{N}$, $WB(k)$ is the maximum of 1s remaining on the Tape among all possible $k$-state Turing machines that Halts when starting with a blank tape. In other words let $WB(k) = \max(\{n \in \mathbb{N}|\;$ a $k$-state turing machine Halts with $n$ 1s on the tape$\})$. 
+
+    Prove or disprove the following claim: the function Working Bidoof $WB$ is computable.
+    
+    \begin{solution}
+        %enter your solution here
+    \end{solution}
+      
+    \question[10] Let \textsc{non-regular} = $\{L \subseteq \Sigma^*|\; L$ is decidable but $L$ is not regular $\}$. 
+    Show that every element of \textsc{non-regular} contains an unrecognizable subset.
+    \begin{solution}
+        %enter your solution here
+    \end{solution}
+    \end{questions}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
